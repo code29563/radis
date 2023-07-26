@@ -17,7 +17,8 @@ build:
   install:
     - method: pip
       path: .
-
+pip:
+    - numpy
 
 sphinx:
   fail_on_warning: true
