@@ -15,9 +15,11 @@ build:
   python:
   # Install our python package before building the docs
   install:
-    - method: pip
+    - method:
+        - conda
+        - pip
       path: .
-pip:
+conda:
     - numpy
 
 sphinx:
