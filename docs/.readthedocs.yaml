@@ -16,11 +16,13 @@ build:
   # Install our python package before building the docs
   install:
     - method:
-        - conda
+        # - conda
         - pip
       path: .
-conda:
-    - numpy
+# conda:
+#     - numpy
+pip:
+    - radis
 
 sphinx:
   fail_on_warning: true
