@@ -10,6 +10,8 @@ Databases can be downloaded automatically and edited locally. By default the dat
 is returned as a :py:mod:`pandas` DataFrame. To explore huge databases (like HITEMP CO2, CH4 or H2O, or ExoMol)
 that do not fit in RAM, RADIS allows you to use a :py:mod:`vaex` DataFrame instead (out-of-RAM).
 
+Download the OH HITRAN database
+===========
 """
 
 #%% Example with HITRAN and Pandas
@@ -45,11 +47,14 @@ df_CO2_hitemp = fetch_hitemp(
 print(f"{len(df_CO2_hitemp)} lines in HITEMP CO2; 2000 - 2450 cm-1")
 
 #%%
+"""
+Download the OH HITRAN database
+===========
 # We can also use Vaex graph functions.
 # See Vaex vizualisations : https://vaex.readthedocs.io/en/latest/guides/advanced_plotting.html#
 #
 # For instance, we plot here (left) the density of lines in the HITRAN and HITEMP databases and (right) the variations of the broadening coefficients with the rotational number.
-
+"""
 import matplotlib.pyplot as plt
 
 fig_size = (13, 5)
